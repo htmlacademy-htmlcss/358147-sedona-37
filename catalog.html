@@ -9,13 +9,13 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img src="#" width="140" height="70" alt="логотип sedona.">
         </a>
         <ul class="main-nav-list">
-          <li class="main-nav-item"><a class="main-nav-link main-nav-link--current">Главная</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html">Главная</a></li>
           <li class="main-nav-item"><a class="main-nav-link" href="#">О седоне</a></li>
-          <li class="main-nav-item"><a class="main-nav-link" href="catalog.html">Гостиницы</a></li>
+          <li class="main-nav-item"><a class="main-nav-link main-nav-link--current">Гостиницы</a></li>
         </ul>
         <ul class="search-nav-list">
           <li class="search-nav-item">
@@ -30,11 +30,56 @@
     </header>
 
     <main class="main-catalog">
-      
+
+      <!-- catalog-filter -->
+      <section class="catalog-filter">
+        <h1 class="catalog-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная.</span></a></li>
+          <li class="breadcrumbs-item"><a>Гостиницы</a></li>
+        </ul>
+        <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <fieldset class="catalog-infrastructure">
+            <legend>Инфраструктура:</legend>
+            <label>
+              <input class="catalog-infrastructure-input" type="checkbox" name="swimming-pool" checked> Бассейн
+            </label>
+            <label>
+              <input class="catalog-infrastructure-input" type="checkbox" name="parking" checked> Парковка
+            </label>
+            <label>
+              <input class="catalog-infrastructure-input" type="checkbox" name="wi-fi"> Wi-Fi
+            </label>
+          </fieldset>
+
+          <fieldset class="catalog-housing">
+            <legend>Тип жилья:</legend>
+            <label>
+              <input class="catalog-housing-input" type="radio" name="housing-type" value="hotel" checked> Гостиница
+            </label>
+            <label>
+              <input class="catalog-housing-input" type="radio" name="housing-type" value="motel"> Мотель
+            </label>
+            <label>
+              <input class="catalog-housing-input" type="radio" name="housing-type" value="apartments"> Апартаменты
+            </label>
+          </fieldset>
+
+          <fieldset class="catalog-price">
+            <legend>Стоимость, ₽:</legend>
+            <input class="catalog-price-input" type="text" name="price-min" value="0" placeholder="от" required>
+            <input class="catalog-price-input" type="text" name="price-max" value="9000" placeholder="до" required>
+          </fieldset>
+
+          <input type="submit" value="Применить" name="apply">
+          <input type="reset" value="Сбросить">
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer">
-      <section class="subscription">
+      <section class="subscription subscription--inner">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
