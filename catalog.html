@@ -68,11 +68,15 @@
 
           <fieldset class="catalog-price">
             <legend>Стоимость, ₽:</legend>
-            <input class="catalog-price-input" type="text" name="price-min" value="0" placeholder="от" required>
-            <input class="catalog-price-input" type="text" name="price-max" value="9000" placeholder="до" required>
+            <label>
+              <input class="catalog-price-input" type="number" name="price-min" value="0" required>от
+            </label>
+            <label>
+              <input class="catalog-price-input" type="number" name="price-max" value="9000" required>до
+            </label>
           </fieldset>
 
-          <input type="submit" value="Применить" name="apply">
+          <button type="submit">Применить</button>
           <input type="reset" value="Сбросить">
         </form>
       </section>
@@ -83,6 +87,8 @@
         <p class="catalog-filter-recult">Найдено гостиниц: <span class="catalog-filter-recult-amount">38</span></p>
         <select name="sorting">
           <option value="cheap">Сначала дешевые</option>
+          <option value="еxpensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
         </select>
 
         <ul class="card-view">
