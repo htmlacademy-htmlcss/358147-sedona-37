@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+/* index */
+
+/* header */
+
+.main-header {
+  text-align: center;
+}
+
+.main-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav-link {
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.search-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-nav-link {
+  display: block;
+  width: 44px;
+  height: 64px;
+}
+
+.search-nav-link--search {
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-nav-link--like {
+  background-image: url(../images/icons/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.search-nav-link-basket {
+  display: block;
+  width: 160px;
+  padding: 8px 0 8px 0;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+/* hero */
+
+.hero {
+  /* background-image: url(../images/hero-background.jpg), url(../images/hotel-2.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center; */
+
+  background:  url(../images/hero-background-mask.svg) no-repeat center bottom, url(../images/hero-background.jpg) no-repeat;
+}
