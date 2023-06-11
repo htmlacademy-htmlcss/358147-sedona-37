@@ -40,13 +40,13 @@
         <section class="catalog-filter">
           <h1 class="catalog-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item"><a href="index.html"><span class="visually-hidden">Главная.</span></a></li>
-            <li class="breadcrumbs-item"><a href="catalog.html" aria-current="page">Гостиницы</a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-link--index" href="index.html"><span class="visually-hidden">Главная.</span></a></li>
+            <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a></li>
           </ul>
           <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="catalog-infrastructure">
-              <legend>Инфраструктура:</legend>
+              <legend class="catalog-form-title">Инфраструктура:</legend>
               <label>
                 <input class="catalog-infrastructure-input" type="checkbox" name="swimming-pool" checked> Бассейн
               </label>
@@ -59,7 +59,7 @@
             </fieldset>
 
             <fieldset class="catalog-housing">
-              <legend>Тип жилья:</legend>
+              <legend class="catalog-form-title">Тип жилья:</legend>
               <label>
                 <input class="catalog-housing-input" type="radio" name="housing-type" value="hotel" checked> Гостиница
               </label>
@@ -72,7 +72,7 @@
             </fieldset>
 
             <fieldset class="catalog-price">
-              <legend>Стоимость, ₽:</legend>
+              <legend class="catalog-form-title">Стоимость, ₽:</legend>
               <label>
                 <input class="catalog-price-input" type="number" name="price-min" value="0" required>от
               </label>
@@ -81,8 +81,8 @@
               </label>
             </fieldset>
 
-            <button type="submit">Применить</button>
-            <input type="reset" value="Сбросить">
+            <button class="catalog-filter-submit" type="submit">Применить</button>
+            <input class="catalog-filter-reset" type="reset" value="Сбросить">
           </form>
         </section>
 
@@ -192,13 +192,13 @@
       <footer class="main-footer">
         <ul class="socials-list">
           <li class="socials-item">
-            <a class="socials-link" href="https://vk.com/htmlacademy"><span class="visually-hidden">Vkontakte</span></a>
+            <a class="socials-link socials-link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Vkontakte</span></a>
           </li>
           <li class="socials-item">
-            <a class="socials-link" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
+            <a class="socials-link socials-link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span></a>
           </li>
           <li class="socials-item">
-            <a class="socials-link" href="Youtube"><span class="visually-hidden">Youtube</span></a>
+            <a class="socials-link socials-link--youtube" href="Youtube"><span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
         <a class="main-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
