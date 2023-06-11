@@ -74,6 +74,7 @@ body {
   display: block;
   width: 44px;
   height: 64px;
+  text-decoration: none;
 }
 
 .search-nav-link--search {
@@ -86,6 +87,13 @@ body {
   background-image: url(../images/icons/like.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.search-nav-link-quantity {
+  color: #ffffff;
+  background-color: #7db54f;
+  font-size: 10px;
+  line-height: 10px;
 }
 
 .search-nav-link-basket {
@@ -166,25 +174,28 @@ body {
   list-style: none;
 }
 
+.features-item {
+  padding-top: 183px;
+}
+
+.features-item--housing {
+  background: url(../images/icons/housing.svg) no-repeat center 81px;
+}
+
+.features-item--food {
+  background: url(../images/icons/food.svg) no-repeat center 81px;
+}
+
+.features-item--souvenirs {
+  background: url(../images/icons/souvenirs.svg) no-repeat center 81px;
+}
+
 .features-item-title {
-  padding-top: 102px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.features-item-title--housing {
-  background: url(../images/icons/housing.svg) no-repeat top center;
-}
-
-.features-item-title--food {
-  background: url(../images/icons/food.svg) no-repeat top center;
-}
-
-.features-item-title--souvenirs {
-  background: url(../images/icons/souvenirs.svg) no-repeat top center;
 }
 
 .features-item-text {
@@ -293,6 +304,7 @@ body {
   background-color: #82B3D3;
   background-image: url(../images/filter-background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
 
