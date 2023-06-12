@@ -84,7 +84,7 @@
             </fieldset>
 
             <button class="catalog-filter-submit" type="submit">Применить</button>
-            <input class="catalog-filter-reset" type="reset" value="Сбросить">
+            <button class="catalog-filter-reset" type="reset">Сбросить</button>
           </form>
         </section>
 
@@ -92,21 +92,21 @@
         <section class="catalog">
           <h2 class="visually-hidden">Результат поиска гостиниц</h2>
           <p class="catalog-filter-recult">Найдено гостиниц: <span class="catalog-filter-recult-amount">38</span></p>
-          <select name="sorting">
+          <select class="catalog-sorting" name="sorting">
             <option value="cheap">Сначала дешевые</option>
             <option value="еxpensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
 
           <ul class="card-view">
-            <li class="card-view-item card-view-item--activ">
-              <button class="card-view-btn" type="button"><span class="visually-hidden">плитка.</span></button>
+            <li class="card-view-item">
+              <button class="card-view-btn card-view-btn--grid card-view-btn--activ" type="button"><span class="visually-hidden">плитка.</span></button>
             </li>
             <li class="card-view-item">
-              <button class="card-view-btn" type="button"><span class="visually-hidden">карточка.</span></button>
+              <button class="card-view-btn card-view-btn--card" type="button"><span class="visually-hidden">карточка.</span></button>
             </li>
             <li class="card-view-item">
-              <button class="card-view-btn" type="button"><span class="visually-hidden">список.</span></button>
+              <button class="card-view-btn card-view-btn--list" type="button"><span class="visually-hidden">список.</span></button>
             </li>
           </ul>
 
@@ -120,7 +120,7 @@
               <p class="card-list-price">Гостиница От 4000 ₽</p>
               <a class="card-list-more" href="#">подробнее</a>
               <button class="card-list-favorites" type="button">в избранное</button>
-              <p class="stars"><span class="visually-hidden">4 звезды</span></p>
+              <p class="stars stars--4"><span class="visually-hidden">4 звезды</span></p>
               <p class="rating">Рейтинг: 8,5</p>
             </li>
             <li class="card-list-item">
@@ -131,8 +131,8 @@
               </a>
               <p class="card-list-price">Гостиница От 5000 ₽</p>
               <a class="card-list-more" href="#">подробнее</a>
-              <button class="card-list-favorites card-list-favorites--active" type="button">в избранное</button>
-              <p class="stars"><span class="visually-hidden">4 звезды</span></p>
+              <button class="card-list-favorites card-list-favorites--active" type="button">в избранном</button>
+              <p class="stars stars--4"><span class="visually-hidden">4 звезды</span></p>
               <p class="rating">Рейтинг: 9,2</p>
             </li>
             <li class="card-list-item">
@@ -144,7 +144,7 @@
               <p class="card-list-price">Гостиница От 2500 ₽</p>
               <a class="card-list-more" href="#">подробнее</a>
               <button class="card-list-favorites" type="button">в избранное</button>
-              <p class="stars"><span class="visually-hidden">3 звезды</span></p>
+              <p class="stars stars--3"><span class="visually-hidden">3 звезды</span></p>
               <p class="rating">Рейтинг: 6,9</p>
             </li>
             <li class="card-list-item">
@@ -156,7 +156,7 @@
               <p class="card-list-price">Гостиница От 1500 ₽</p>
               <a class="card-list-more" href="#">подробнее</a>
               <button class="card-list-favorites" type="button">в избранное</button>
-              <p class="stars"><span class="visually-hidden">2 звезды</span></p>
+              <p class="stars stars--2"><span class="visually-hidden">2 звезды</span></p>
               <p class="rating">Рейтинг: 5,0</p>
             </li>
           </ul>
@@ -175,6 +175,9 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
+              <a class="pagination-link pagination-link--all" href="#">...</a>
+            </li>
+            <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
@@ -185,8 +188,8 @@
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
-            <input class="subscription-form-btn" type="submit" value="Подписаться">
+            <input class="subscription-form-email subscription-form-email--inner" type="email" name="email" placeholder="Ваш e-mail" required>
+            <button class="subscription-form-btn subscription-form-btn--inner" type="submit">Подписаться</button>
           </form>
         </section>
       </main>

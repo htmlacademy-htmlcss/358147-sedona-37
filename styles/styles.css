@@ -78,13 +78,13 @@ body {
 }
 
 .search-nav-link--search {
-  background-image: url(../images/icons/search.svg);
+  background-image: url("../images/icons/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .search-nav-link--like {
-  background-image: url(../images/icons/like.svg);
+  background-image: url("../images/icons/like.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -116,7 +116,7 @@ body {
 /* hero */
 
 .hero {
-  background: url(../images/hero-background-mask.svg) no-repeat center bottom, url(../images/hero-background.jpg) no-repeat;
+  background: url("../images/hero-background-mask.svg") no-repeat center bottom, url("../images/hero-background.jpg") no-repeat;
 }
 
 /* advantages */
@@ -179,15 +179,15 @@ body {
 }
 
 .features-item--housing {
-  background: url(../images/icons/housing.svg) no-repeat center 81px;
+  background: url("../images/icons/housing.svg") no-repeat center 81px;
 }
 
 .features-item--food {
-  background: url(../images/icons/food.svg) no-repeat center 81px;
+  background: url("../images/icons/food.svg") no-repeat center 81px;
 }
 
 .features-item--souvenirs {
-  background: url(../images/icons/souvenirs.svg) no-repeat center 81px;
+  background: url("../images/icons/souvenirs.svg") no-repeat center 81px;
 }
 
 .features-item-title {
@@ -228,7 +228,7 @@ body {
 /* subscription */
 
 .subscription {
-  background-image: url(../images/subscribe-background.jpg);
+  background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
 }
@@ -276,15 +276,15 @@ body {
 }
 
 .socials-link--vkontakte {
-  background: url(../images/icons/vkontakte.svg) no-repeat center;
+  background: url("../images/icons/vkontakte.svg") no-repeat center;
 }
 
 .socials-link--telegram {
-  background: url(../images/icons/telegram.svg) no-repeat center;
+  background: url("../images/icons/telegram.svg") no-repeat center;
 }
 
 .socials-link--youtube {
-  background: url(../images/icons/youtube.svg) no-repeat center;
+  background: url("../images/icons/youtube.svg") no-repeat center;
 }
 
 .main-footer-phone {
@@ -302,7 +302,7 @@ body {
 
 .catalog-filter {
   background-color: #82B3D3;
-  background-image: url(../images/filter-background.jpg);
+  background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -328,7 +328,7 @@ body {
 }
 
 .breadcrumbs-link--index {
-  background: url(../images/icons/home.svg) no-repeat center;
+  background: url("../images/icons/home.svg") no-repeat center;
   display: block;
   width: 13px;
   height: 15px;
@@ -345,9 +345,16 @@ body {
   line-height: 23px;
 }
 
+.catalog-price-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .catalog-filter-submit {
   padding: 8px 50px;
   border: none;
+  font-family: inherit;
   background-color: #82b3d3;
   color: inherit;
   border-radius: 4px;
@@ -360,6 +367,7 @@ body {
 .catalog-filter-reset {
   padding: 8px 50px;
   border: none;
+  font-family: inherit;
   background-color: rgba(0, 0, 0, 0);
   color: inherit;
   border-radius: 4px;
@@ -367,4 +375,177 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.catalog-filter-recult {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-sorting {
+  font-size: 18px;
+  line-height: 21px;
+  font-family: inherit;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.card-view {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-view-btn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.card-view-btn--activ {
+  border: 2px solid #000000;
+}
+
+.card-view-btn--grid {
+  background: url("../images/icons/grid.svg") no-repeat center;
+}
+
+.card-view-btn--card {
+  background: url("../images/icons/card.svg") no-repeat center;
+}
+
+.card-view-btn--list {
+  background: url("../images/icons/list.svg") no-repeat center;
+}
+
+.card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card-list-item a {
+  text-decoration: none;
+}
+
+.card-list-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.card-list-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-list-more {
+  display: inline-block;
+  padding: 8px 26px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.card-list-favorites {
+  font-family: inherit;
+  display: inline-block;
+  padding: 8px 26px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: none;
+  border-radius: 4px;
+}
+
+.card-list-favorites--active {
+  background-color: #7db54f;
+}
+
+.stars {
+  width: 140px;
+  height: 37px;
+  background-image: url(../images/icons/stars.svg);
+  background-repeat: no-repeat;
+}
+
+.stars--4 {
+  width: 90px;
+}
+
+.stars--3 {
+  width: 70px;
+}
+
+.stars--2 {
+  width: 45px;
+}
+
+.stars-- {
+  width: 20px;
+}
+
+.rating {
+  display: inline-block;
+  padding: 8px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination-link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  background-color: #82b3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.pagination-link--curent {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-link--all {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.subscription--inner {
+  background-image: none;
+  color: #000000;
+}
+
+.subscription-form-btn--inner {
+  color: #ffffff;
+}
+
+.subscription-form-email--inner {
+  background-color: #f2f2f2;
 }
