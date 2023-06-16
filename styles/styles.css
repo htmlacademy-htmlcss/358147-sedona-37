@@ -140,6 +140,7 @@ body {
 }
 
 .advantages-item-title {
+  color: #000000;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -155,6 +156,10 @@ body {
   background-color: #82B3D3;
 }
 
+.advantages-item-title--blue {
+  color: #ffffff;
+}
+
 .advantages-item--light {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -162,6 +167,7 @@ body {
 /* features */
 
 .features-title {
+  color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -340,6 +346,11 @@ body {
   line-height: 24px;
 }
 
+.catalog-form-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .catalog-housing-input {
   font-size: 18px;
   line-height: 23px;
@@ -378,6 +389,7 @@ body {
 }
 
 .catalog-filter-recult {
+  color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -385,6 +397,7 @@ body {
 }
 
 .catalog-sorting {
+  color: #333333;
   font-size: 18px;
   line-height: 21px;
   font-family: inherit;
@@ -450,6 +463,7 @@ body {
   padding: 8px 26px;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
@@ -462,6 +476,7 @@ body {
   padding: 8px 26px;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #82b3d3;
@@ -540,6 +555,10 @@ body {
 .subscription--inner {
   background-image: none;
   color: #000000;
+}
+
+.subscription-text--inner {
+  color: #333333;
 }
 
 .subscription-form-btn--inner {
