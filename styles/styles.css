@@ -471,6 +471,27 @@ body {
   display: flex;
 }
 
+.catalog-infrastructure {
+  width: 151px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.catalog-housing {
+  width: 151px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.catalog-price {
+  width: 288px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .catalog-form-title {
   font-weight: 700;
   font-size: 20px;
@@ -480,6 +501,7 @@ body {
 .catalog-form-label {
   font-size: 18px;
   line-height: 23px;
+  display: block;
 }
 
 .catalog-housing-input {
@@ -491,6 +513,8 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  padding: 12px 20px;
+  width: 143px;
 }
 
 .catalog-filter-submit {
