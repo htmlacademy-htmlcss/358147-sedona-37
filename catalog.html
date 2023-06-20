@@ -91,25 +91,29 @@
         <!-- catalog -->
         <section class="catalog">
           <h2 class="visually-hidden">Результат поиска гостиниц</h2>
-          <p class="catalog-filter-recult">Найдено гостиниц: <span class="catalog-filter-recult-amount">38</span></p>
-          <select class="catalog-sorting" name="sorting">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="еxpensive">Сначала дорогие</option>
-            <option value="popular">Сначала популярные</option>
-          </select>
+          <div class="catalog-wrapper">
+            <p class="catalog-filter-recult">Найдено гостиниц: <span class="catalog-filter-recult-amount">38</span></p>
+            <select class="catalog-sorting" name="sorting">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="еxpensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
+            </select>
 
-          <ul class="card-view">
-            <li class="card-view-item">
-              <button class="card-view-btn card-view-btn--grid card-view-btn--activ" type="button"><span class="visually-hidden">плитка.</span></button>
-            </li>
-            <li class="card-view-item">
-              <button class="card-view-btn card-view-btn--card" type="button"><span class="visually-hidden">карточка.</span></button>
-            </li>
-            <li class="card-view-item">
-              <button class="card-view-btn card-view-btn--list" type="button"><span class="visually-hidden">список.</span></button>
-            </li>
-          </ul>
-
+            <ul class="card-view">
+              <li class="card-view-item">
+                <button class="card-view-btn card-view-btn--grid card-view-btn--activ" type="button"><span
+                    class="visually-hidden">плитка.</span></button>
+              </li>
+              <li class="card-view-item">
+                <button class="card-view-btn card-view-btn--card" type="button"><span
+                    class="visually-hidden">карточка.</span></button>
+              </li>
+              <li class="card-view-item">
+                <button class="card-view-btn card-view-btn--list" type="button"><span
+                    class="visually-hidden">список.</span></button>
+              </li>
+            </ul>
+          </div>
           <ul class="card-list">
             <li class="card-list-item">
               <a href="#">
@@ -186,9 +190,11 @@
         <!-- subscription -->
         <section class="subscription subscription--inner">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-text subscription-text--inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscription-text subscription-text--inner">Только полезная информация и никакого спама, честное
+            бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscription-form-email subscription-form-email--inner" type="email" name="email" placeholder="Ваш e-mail" required>
+            <input class="subscription-form-email subscription-form-email--inner" type="email" name="email"
+              placeholder="Ваш e-mail" required>
             <button class="subscription-form-btn subscription-form-btn--inner" type="submit">Подписаться</button>
           </form>
         </section>

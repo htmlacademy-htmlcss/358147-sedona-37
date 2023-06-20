@@ -149,10 +149,16 @@ body {
 /* hero */
 
 .hero {
-  background: url("../images/hero-background-mask.svg") no-repeat center bottom, url("../images/hero-background.jpg") no-repeat;
+  background: url("../images/hero-background-mask.svg") no-repeat center bottom, url("../images/hero-background.jpg") no-repeat center/cover;
+  padding-top: 52px;
+  padding-bottom: 83px;
 }
 
 /* advantages */
+
+.advantages {
+  padding-top: 69px;
+}
 
 .advantages-intro {
   font-weight: 700;
@@ -160,6 +166,13 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.advantages-text {
+  margin: 0;
+  margin-bottom: 69px;
 }
 
 .advantages-list {
@@ -181,11 +194,27 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0 27px 30px 27px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.advantages-item-title::before {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: calc(50% - 30px);
+  bottom: 0;
 }
 
 .advantages-item-text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .item-blue-wrapper {
@@ -210,12 +239,23 @@ body {
 
 /* features */
 
+.features {
+  margin-top: 64px;
+}
+
 .features-title {
   color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.features-text {
+  margin: 0;
+  margin-bottom: 64px;
 }
 
 .features-list {
@@ -261,12 +301,23 @@ body {
 
 /* search */
 
+.search {
+  padding: 96px 304px;
+}
+
 .search-intro {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.search-text {
+  margin: 0;
+  margin-bottom: 54px;
 }
 
 .search-link {
@@ -287,6 +338,7 @@ body {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
+  padding: 96px 0 104px 0;
 }
 
 .subscription-title {
@@ -404,6 +456,12 @@ body {
   height: 15px;
 }
 
+.catalog-form {
+  display: flex;
+}
+
+
+
 .catalog-form-title {
   font-weight: 700;
   font-size: 20px;
@@ -452,12 +510,23 @@ body {
   text-transform: uppercase;
 }
 
+.catalog {
+  padding: 0 70px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .catalog-filter-recult {
   color: #000000;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  width: 350px;
+  padding-right: 200px;
 }
 
 .catalog-sorting {
@@ -467,12 +536,17 @@ body {
   font-family: inherit;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  width: 292px;
+  margin-right: auto;
 }
 
 .card-view {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
 }
 
 .card-view-btn {
@@ -504,6 +578,16 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card-list-item {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .card-list-item a {
@@ -537,7 +621,7 @@ body {
 .card-list-favorites {
   font-family: inherit;
   display: inline-block;
-  padding: 8px 26px;
+  padding: 8px 20px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -550,6 +634,7 @@ body {
 
 .card-list-favorites--active {
   background-color: #7db54f;
+  padding: 8px 18px;
 }
 
 .stars {
@@ -589,6 +674,8 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  gap: 8px;
 }
 
 .pagination-link {
@@ -598,11 +685,10 @@ body {
   line-height: 36px;
   text-decoration: none;
   background-color: #82b3d3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
+  padding: 12px 0;
   width: 60px;
-  height: 60px;
   border-radius: 4px;
 }
 
@@ -619,6 +705,7 @@ body {
 .subscription--inner {
   background-image: none;
   color: #000000;
+  text-align: center;
 }
 
 .subscription-text--inner {
