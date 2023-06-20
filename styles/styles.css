@@ -428,18 +428,24 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  padding: 35px 70px 73px 70px;
 }
 
 .catalog-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -447,6 +453,9 @@ body {
   color: inherit;
   font-size: 16px;
   line-height: 21px;
+  padding-left: 20px;
+  margin-left: 11px;
+  background: url(../images/icons/arrow.svg) no-repeat center left;
 }
 
 .breadcrumbs-link--index {
@@ -454,6 +463,8 @@ body {
   display: block;
   width: 13px;
   height: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-form {
