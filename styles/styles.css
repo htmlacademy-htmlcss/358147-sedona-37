@@ -469,6 +469,7 @@ body {
 
 .catalog-form {
   display: flex;
+  justify-content: space-between;
 }
 
 .catalog-infrastructure {
@@ -496,6 +497,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 32px;
 }
 
 .catalog-form-label {
@@ -514,7 +516,12 @@ body {
   font-size: 18px;
   line-height: 24px;
   padding: 12px 20px;
-  width: 143px;
+  width: 103px;
+  border: none;
+}
+
+.catalog-button-wrapper {
+  width: 191px;
 }
 
 .catalog-filter-submit {
