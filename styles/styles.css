@@ -432,21 +432,31 @@ body {
 }
 
 .socials-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 40px;
 }
 
+.socials-link:hover svg {
+  fill: #68A2CA;
+}
+
+.socials-link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .socials-link--vkontakte {
-  background: url("../images/icons/vkontakte.svg") no-repeat center;
+  /* background: url("../images/icons/vkontakte.svg") no-repeat center; */
 }
 
 .socials-link--telegram {
-  background: url("../images/icons/telegram.svg") no-repeat center;
+  /* background: url("../images/icons/telegram.svg") no-repeat center; */
 }
 
 .socials-link--youtube {
-  background: url("../images/icons/youtube.svg") no-repeat center;
+  /* background: url("../images/icons/youtube.svg") no-repeat center; */
 }
 
 .main-footer-phone {
