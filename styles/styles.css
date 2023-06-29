@@ -62,17 +62,19 @@ body {
   text-align: center;
 }
 
-.logo {
-  margin-right: 30px;
-}
-
 .main-nav {
   display: flex;
   padding: 0 70px;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
 }
 
 .main-nav-list {
   margin: 0;
+  margin-left: 169px;
   padding: 0;
   list-style: none;
   width: 500px;
@@ -88,7 +90,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
-  padding: 16px 20px;
+  padding: 20px 16px;
 }
 
 .search-nav-list {
@@ -149,7 +151,7 @@ body {
 /* hero */
 
 .hero {
-  background: url("../images/hero-background-mask.svg") no-repeat center bottom, url("../images/hero-background.jpg") no-repeat center/cover;
+  background: url("../images/hero-background-mask.svg") no-repeat center bottom -1px, url("../images/hero-background.jpg") no-repeat center/cover;
   padding-top: 52px;
   padding-bottom: 83px;
 }
