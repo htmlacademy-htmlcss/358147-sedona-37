@@ -447,18 +447,6 @@ body {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.socials-link--vkontakte {
-  /* background: url("../images/icons/vkontakte.svg") no-repeat center; */
-}
-
-.socials-link--telegram {
-  /* background: url("../images/icons/telegram.svg") no-repeat center; */
-}
-
-.socials-link--youtube {
-  /* background: url("../images/icons/youtube.svg") no-repeat center; */
-}
-
 .main-footer-phone {
   font-weight: 400;
   font-size: 40px;
@@ -475,6 +463,14 @@ body {
 .main-footer-phone:active {
   color: #756157;
   opacity: 0.3;
+}
+
+.main-footer-logo:hover svg {
+  fill: #756157;
+}
+
+.main-footer-logo:active svg {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* catalog */
