@@ -458,6 +458,15 @@ body {
   text-decoration: none;
 }
 
+.main-footer-phone:hover {
+  color: #756157;
+}
+
+.main-footer-phone:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
 /* catalog */
 
 /* filter */
@@ -642,6 +651,10 @@ body {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+.card-view-btn:hover {
+  border: 2px solid #000000;
 }
 
 .card-view-btn--activ {
@@ -845,6 +858,31 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.pagination-link--curent:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination-link--curent:active {
+  color: #000000;
+}
+
+.pagination-link--all:hover {
+  background-color: #ffffff;
+}
+
+.pagination-link--all:active {
+  color: #000000;
+}
+
 
 .subscription--inner {
   background-image: none;
