@@ -144,6 +144,14 @@ body {
   align-self: center;
 }
 
+.search-nav-link-basket:hover {
+  background-color: #615048;
+}
+
+.search-nav-link-basket:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
 .main-index {
   text-align: center;
 }
@@ -344,6 +352,14 @@ body {
   border-radius: 4px;
 }
 
+.search-link:hover {
+  background-color: #615048;
+}
+
+.search-link:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
 /* subscription */
 
 .subscription {
@@ -379,6 +395,14 @@ body {
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   color: inherit;
+}
+
+.subscription-form-btn:hover {
+  background-color: #68A2CA;
+}
+
+.subscription-form-btn:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .subscription-form-email {
@@ -701,6 +725,15 @@ body {
   margin-bottom: 16px;
 }
 
+.card-list-more:hover {
+  background-color: #615048;
+}
+
+.card-list-more:active {
+  color: rgba(255, 255, 255, 0.30);
+  background-color: #756157;
+}
+
 .card-list-favorites {
   font-family: inherit;
   display: inline-block;
@@ -716,11 +749,28 @@ body {
   grid-column-start: 2;
   grid-column-end: 3;
   margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.card-list-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.card-list-favorites:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .card-list-favorites--active {
   background-color: #7db54f;
   padding: 8px 18px;
+}
+
+.card-list-favorites--active:hover {
+  background-color: #6C9E42;
+}
+
+.card-list-favorites--active:active {
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .stars {
