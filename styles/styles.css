@@ -48,6 +48,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .main-index {
@@ -97,6 +98,10 @@ body {
   padding: 20px 16px;
 }
 
+.main-nav-link:hover {
+  opacity: 0.6;
+}
+
 .main-nav-link--current::before {
   content: " ";
   position: absolute;
@@ -123,6 +128,10 @@ body {
   width: 44px;
   height: 64px;
   text-decoration: none;
+}
+
+.search-nav-link:hover {
+  opacity: 0.6;
 }
 
 .search-nav-link--search {
