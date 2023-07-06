@@ -18,7 +18,7 @@
           </a>
           <ul class="main-nav-list">
             <li class="main-nav-item"><a class="main-nav-link" href="index.html">Главная</a></li>
-            <li class="main-nav-item"><a class="main-nav-link" href="#">О седоне</a></li>
+            <li class="main-nav-item"><a class="main-nav-link" href="#">О Седоне</a></li>
             <li class="main-nav-item"><a class="main-nav-link main-nav-link--current" href="catalog.html"
                 aria-current="page">Гостиницы</a></li>
           </ul>
@@ -52,7 +52,8 @@
             <fieldset class="catalog-infrastructure">
               <legend class="catalog-form-title">Инфраструктура:</legend>
               <label class="catalog-form-label">
-                <input class="catalog-infrastructure-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                <input class="catalog-infrastructure-input visually-hidden" type="checkbox" name="swimming-pool"
+                  checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Бассейн</span>
               </label>
@@ -69,9 +70,10 @@
             </fieldset>
 
             <fieldset class="catalog-housing">
-              <legend class="catalog-form-title">Тип жилья:</legend>
+              <legend class="catalog-form-title">Тип Жилья:</legend>
               <label class="catalog-form-label">
-                <input class="catalog-housing-input visually-hidden" type="radio" name="housing-type" value="hotel" checked>
+                <input class="catalog-housing-input visually-hidden" type="radio" name="housing-type" value="hotel"
+                  checked>
                 <span class="control-mark control-mark--housing"></span>
                 <span class="control-label">Гостиница</span>
               </label>
@@ -81,7 +83,8 @@
                 <span class="control-label">Мотель</span>
               </label>
               <label class="catalog-form-label">
-                <input class="catalog-housing-input visually-hidden" type="radio" name="housing-type" value="apartments">
+                <input class="catalog-housing-input visually-hidden" type="radio" name="housing-type"
+                  value="apartments">
                 <span class="control-mark control-mark--housing"></span>
                 <span class="control-label">Апартаменты</span>
               </label>
@@ -89,12 +92,26 @@
 
             <fieldset class="catalog-price">
               <legend class="catalog-form-title">Стоимость, ₽:</legend>
-              <label>
-                <input class="catalog-price-input" type="number" name="price-min" value="0" required>от
-              </label>
-              <label>
-                <input class="catalog-price-input" type="number" name="price-max" value="9000" required>до
-              </label>
+              <div class="catalog-price-wrapper">
+                <label class="catalog-price-label">
+                  <input class="catalog-price-input catalog-price-input--min" type="number" name="price-min" value="0" required><span
+                    class="catalog-price-label-value">от</span>
+                </label>
+                <label class="catalog-price-label">
+                  <input class="catalog-price-input catalog-price-input--max" type="number" name="price-max" value="9000" required><span class="catalog-price-label-value">до</span>
+                </label>
+              </div>
+              <div class=" range-scale">
+                    <div class="range-bar">
+                      <button type="button" class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button type="button" class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+              </div>
+
             </fieldset>
             <div class="catalog-button-wrapper">
               <button class="catalog-filter-submit" type="submit">Применить</button>
