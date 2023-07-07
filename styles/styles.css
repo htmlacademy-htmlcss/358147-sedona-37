@@ -743,8 +743,6 @@ body {
   -moz-appearance:textfield;
 }
 
-
-
 .range-scale {
   width: 287px;
   height: 4px;
@@ -841,7 +839,7 @@ body {
 }
 
 .catalog {
-  padding: 50px 70px 0 70px;
+  padding: 49px 70px 0 70px;
 }
 
 .catalog-wrapper {
@@ -858,7 +856,7 @@ body {
   text-transform: uppercase;
   width: 350px;
   margin: 0;
-  margin-right: 200px;
+  margin-right: auto;
 }
 
 .catalog-sorting {
@@ -869,7 +867,12 @@ body {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   width: 292px;
-  margin-right: auto;
+  margin-right: 70px;
+  appearance: none;
+  padding: 13px 40px 13px 20px;
+  background-image: url(../images/icons/hand.svg);
+  background-repeat: no-repeat;
+  background-position: center right 18px;
 }
 
 .card-view {
