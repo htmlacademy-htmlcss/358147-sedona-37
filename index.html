@@ -163,7 +163,58 @@
       </footer>
     </div>
 
-    
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="modal-wrapper">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <label class="modal-label-date">
+            <span class="modal-label-text">Дата Заезда:</span>
+            <input class="modal-input-date" value="27 апреля 2020" type="text" name="arrival-date">
+            <span class="modal-date-maesge modal-date-maesge--error">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="modal-label-date">
+            <span class="modal-label-text">Дата Выезда:</span>
+            <input class="modal-input-date" value="1 сентября 2023" type="text" name="departure-date">
+            <span class="modal-date-maesge">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+
+          <div class="modal-label-people-wrapper">
+            <label class="modal-label-people">
+              <span class="modal-label-text-people modal-label-text-people--adults">Взрослые:</span>
+              <div class="change-button-wrapper">
+                <input class="modal-input-people" type="number" name="adults" value="2">
+                <button class="modal-input-change" type="button">
+                  <span class="visually-hidden">уменьшить количество.</span>
+                </button>
+                <button class="modal-input-change modal-input-change--plus" type="button">
+                  <span class="visually-hidden">увеличить количество.</span>
+                </button>
+              </div>
+            </label>
+            <label class="modal-label-people">
+              <span class="modal-label-text-people modal-label-text-people--babies">Дети:</span>
+              <div class="tooltip" type="button"><span class="visually-hidden">информация.</span></div>
+              <div class="change-button-wrapper">
+                <input class="modal-input-people" type="number" name="babies" value="2">
+                <button class="modal-input-change" type="button">
+                  <span class="visually-hidden">уменьшить количество.</span>
+                </button>
+                <button class="modal-input-change modal-input-change--plus" type="button">
+                  <span class="visually-hidden">увеличить количество.</span>
+                </button>
+              </div>
+            </label>
+          </div>
+          <button class="modal-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
 
   </body>
 
