@@ -1166,6 +1166,8 @@ body {
   background-color: #f2f2f2;
 }
 
+/* modal */
+
 .modal-container {
   position: fixed;
   width: 100%;
@@ -1175,6 +1177,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-container--closed {
+  display: none;
 }
 
 .modal-content {
@@ -1237,6 +1243,11 @@ body {
 }
 
 .tooltip {
+  position: relative;
+  padding-top: 12px;
+}
+
+.tooltip-button {
   display: block;
   border: none;
   cursor: pointer;
@@ -1250,13 +1261,37 @@ body {
   margin-right: 47px;
 }
 
-/* .tooltip:hover {
-  opacity: 0.6;
-} */
+.tooltip-text {
+  display: none;
+  width: 212px;
+  padding: 20px 22px;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  left: -114px;
+  top: 53px
+}
 
-/* .tooltip:active {
-  opacity: 0.3;
-}  */
+.tooltip-text::after {
+  display: block;
+  content: " ";
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(../images/icons/triangle.svg);
+  background-repeat: no-repeat;
+}
+
+.tooltip-button:hover + .tooltip-text {
+  display: block;
+}
 
 .modal-input-date {
   width: 360px;
@@ -1317,6 +1352,10 @@ body {
   position: relative;
 }
 
+.change-button-wrapper--adults {
+  margin-right: auto;
+}
+
 .modal-label-text-people {
   font-size: 20px;
   line-height: 24px;
@@ -1363,6 +1402,11 @@ body {
   cursor: pointer;
   top: 0;
   left: 0;
+  border-radius: 4px;
+}
+
+.modal-input-change:hover {
+  background-color: #e6e6e6;
 }
 
 .modal-input-change--plus {
