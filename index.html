@@ -115,7 +115,7 @@
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
+            <input class="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required aria-label="Ваш e-mail">
             <button class="subscription-form-btn" type="submit">Подписаться</button>
           </form>
         </section>
@@ -174,12 +174,12 @@
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="modal-label-date">
             <span class="modal-label-text">Дата Заезда:</span>
-            <input class="modal-input-date" value="27 апреля 2020" type="text" name="arrival-date">
+            <input class="modal-input-date" value="27 апреля 2020" type="text" name="arrival-date" required>
             <span class="modal-date-maesge modal-date-maesge--error">Мы не можем отправить вас в прошлое.</span>
           </label>
           <label class="modal-label-date">
             <span class="modal-label-text">Дата Выезда:</span>
-            <input class="modal-input-date" value="1 сентября 2023" type="text" name="departure-date">
+            <input class="modal-input-date" value="1 сентября 2023" type="text" name="departure-date" required>
             <span class="modal-date-maesge">На эти даты есть свободные номера. Пока есть.</span>
           </label>
           <div class="modal-label-people-wrapper">
@@ -187,7 +187,7 @@
               <span class="modal-label-text-people modal-label-text-people--adults">Взрослые:</span>
             </label>
             <div class="change-button-wrapper change-button-wrapper--adults">
-              <input class="modal-input-people" id="input-people-adults" type="number" name="adults" value="2">
+              <input class="modal-input-people" id="input-people-adults" type="number" name="adults" value="2" required>
               <button class="modal-input-change" type="button">
                 <span class="visually-hidden">уменьшить количество.</span>
               </button>
@@ -204,7 +204,7 @@
                 Дети до 6 лет размещаются бесплатно.</span>
             </span>
             <div class="change-button-wrapper">
-              <input class="modal-input-people" id="input-people-babies" type="number" name="babies" value="2">
+              <input class="modal-input-people" id="input-people-babies" type="number" name="babies" value="2" required>
               <button class="modal-input-change" type="button">
                 <span class="visually-hidden">уменьшить количество.</span>
               </button>
