@@ -11,7 +11,7 @@
 
   <body>
     <div class="main-container">
-      <header class="main-header">
+      <header class="main-header"  data-test="header">
         <nav class="main-nav">
           <a class="logo" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="логотип sedona.">
@@ -36,7 +36,7 @@
         </nav>
       </header>
 
-      <main class="main-catalog">
+      <main class="main-catalog" data-test="main">
 
         <!-- catalog-filter -->
         <section class="catalog-filter">
@@ -47,7 +47,7 @@
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html"
                 aria-current="page">Гостиницы</a></li>
           </ul>
-          <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
 
             <fieldset class="catalog-infrastructure">
               <legend class="catalog-form-title">Инфраструктура:</legend>
@@ -121,7 +121,7 @@
         </section>
 
         <!-- catalog -->
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Результат поиска гостиниц</h2>
           <div class="catalog-wrapper">
             <p class="catalog-filter-recult">Найдено гостиниц: <span class="catalog-filter-recult-amount">38</span></p>
@@ -220,7 +220,7 @@
         </section>
 
         <!-- subscription -->
-        <section class="subscription subscription--inner">
+        <section class="subscription subscription--inner" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-text subscription-text--inner">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
@@ -232,7 +232,7 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <ul class="socials-list">
           <li class="socials-item">
             <a class="socials-link socials-link--vkontakte" href="https://vk.com/htmlacademy">
