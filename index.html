@@ -55,7 +55,7 @@
                 <h3 class="advantages-item-title advantages-item-title--blue">Настоящий городок</h3>
                 <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/city-sedona.jpg" alt="городок Седона.">
+              <img src="images/city-sedona.jpg" alt="городок Седона." width="800" height="385">
             </li>
             <li class="advantages-item advantages-item--light">
               <h3 class="advantages-item-title">Небольшая площадь</h3>
@@ -70,7 +70,7 @@
               <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item advantages-item--blue">
-              <img src="images/devil-bridge.jpg" alt="Мост дьявола.">
+              <img src="images/devil-bridge.jpg" alt="Мост дьявола." width="800" height="385">
               <div class="item-blue-wrapper">
                 <h3 class="advantages-item-title advantages-item-title--blue">Там есть<br> мост дьявола</h3>
                 <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -115,7 +115,7 @@
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
+            <input class="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required aria-label="Ваш e-mail">
             <button class="subscription-form-btn" type="submit">Подписаться</button>
           </form>
         </section>
@@ -162,6 +162,62 @@
         </a>
       </footer>
     </div>
+
+    <div class="modal-container modal-container--closed">
+      <div class="modal-content">
+        <div class="modal-wrapper">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="modal-label-date">
+            <span class="modal-label-text">Дата Заезда:</span>
+            <input class="modal-input-date" value="27 апреля 2020" type="text" name="arrival-date" required>
+            <span class="modal-date-maesge modal-date-maesge--error">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="modal-label-date">
+            <span class="modal-label-text">Дата Выезда:</span>
+            <input class="modal-input-date" value="1 сентября 2023" type="text" name="departure-date" required>
+            <span class="modal-date-maesge">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+          <div class="modal-label-people-wrapper">
+            <label class="modal-label-people" for="input-people-adults">
+              <span class="modal-label-text-people modal-label-text-people--adults">Взрослые:</span>
+            </label>
+            <div class="change-button-wrapper change-button-wrapper--adults">
+              <input class="modal-input-people" id="input-people-adults" type="number" name="adults" value="2" required>
+              <button class="modal-input-change" type="button">
+                <span class="visually-hidden">уменьшить количество.</span>
+              </button>
+              <button class="modal-input-change modal-input-change--plus" type="button">
+                <span class="visually-hidden">увеличить количество.</span>
+              </button>
+            </div>
+            <label class="modal-label-people" for="input-people-babies">
+              <span class="modal-label-text-people modal-label-text-people--babies">Дети:</span>
+            </label>
+            <span class="tooltip">
+              <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date"><span class="visually-hidden">информация.</span></button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+            <div class="change-button-wrapper">
+              <input class="modal-input-people" id="input-people-babies" type="number" name="babies" value="2" required>
+              <button class="modal-input-change" type="button">
+                <span class="visually-hidden">уменьшить количество.</span>
+              </button>
+              <button class="modal-input-change modal-input-change--plus" type="button">
+                <span class="visually-hidden">увеличить количество.</span>
+              </button>
+            </div>
+          </div>
+          <button class="modal-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
+
   </body>
 
 </html>
