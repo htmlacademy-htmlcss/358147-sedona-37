@@ -1454,13 +1454,30 @@ body {
   background-color: transparent;
   width: 40px;
   height: 48px;
-  background-image: url("../images/icons/minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   top: 0;
   left: 0;
   border-radius: 4px;
+  padding: 0;
+}
+
+.modal-input-change::before {
+  display: block;
+  content: " ";
+  width: 40px;
+  height: 48px;
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.modal-input-change:hover:before {
+  opacity: 1;
+}
+
+.modal-input-change:active:before {
+  opacity: 0.3;
 }
 
 .modal-input-change:hover {
@@ -1468,9 +1485,14 @@ body {
 }
 
 .modal-input-change--plus {
-  background-image: url("../images/icons/plus.svg");
   left: auto;
   right: 0;
+}
+
+.modal-input-change--plus::before {
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .modal-button {
