@@ -11,7 +11,7 @@
 
   <body>
     <div class="main-container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="main-nav">
           <a class="logo" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="логотип sedona.">
@@ -36,7 +36,7 @@
         </nav>
       </header>
 
-      <main class="main-catalog">
+      <main class="main-catalog" data-test="main">
 
         <!-- catalog-filter -->
         <section class="catalog-filter">
@@ -47,13 +47,12 @@
             <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html"
                 aria-current="page">Гостиницы</a></li>
           </ul>
-          <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
 
             <fieldset class="catalog-infrastructure">
               <legend class="catalog-form-title">Инфраструктура:</legend>
               <label class="catalog-form-label">
-                <input class="catalog-infrastructure-input visually-hidden" type="checkbox" name="swimming-pool"
-                  checked>
+                <input class="catalog-infrastructure-input visually-hidden" type="checkbox" name="swimming-pool" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Бассейн</span>
               </label>
@@ -94,22 +93,23 @@
               <legend class="catalog-form-title">Стоимость, ₽:</legend>
               <div class="catalog-price-wrapper">
                 <label class="catalog-price-label">
-                  <input class="catalog-price-input catalog-price-input--min" type="number" name="price-min" value="0" required><span
-                    class="catalog-price-label-value">от</span>
+                  <input class="catalog-price-input catalog-price-input--min" type="number" name="price-min" value="0"
+                    required><span class="catalog-price-label-value">от</span>
                 </label>
                 <label class="catalog-price-label">
-                  <input class="catalog-price-input catalog-price-input--max" type="number" name="price-max" value="9000" required><span class="catalog-price-label-value">до</span>
+                  <input class="catalog-price-input catalog-price-input--max" type="number" name="price-max"
+                    value="9000" required><span class="catalog-price-label-value">до</span>
                 </label>
               </div>
               <div class=" range-scale">
-                    <div class="range-bar">
-                      <button type="button" class="range-toggle toggle-min">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                      </button>
-                      <button type="button" class="range-toggle toggle-max">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                      </button>
-                    </div>
+                <div class="range-bar">
+                  <button type="button" class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button type="button" class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
 
             </fieldset>
@@ -121,7 +121,7 @@
         </section>
 
         <!-- catalog -->
-        <section class="catalog">
+        <section class="catalog" data-test="catalog">
           <h2 class="visually-hidden">Результат поиска гостиниц</h2>
           <div class="catalog-wrapper">
             <p class="catalog-filter-recult">Найдено гостиниц: <span class="catalog-filter-recult-amount">38</span></p>
@@ -133,16 +133,16 @@
 
             <ul class="card-view">
               <li class="card-view-item">
-                <button class="card-view-btn card-view-btn--grid card-view-btn--activ" type="button"><span
-                    class="visually-hidden">плитка.</span></button>
+                <a href="#" class="card-view-btn card-view-btn--grid card-view-btn--activ" type="button"><span
+                    class="visually-hidden">плитка.</span></a>
               </li>
               <li class="card-view-item">
-                <button class="card-view-btn card-view-btn--card" type="button"><span
-                    class="visually-hidden">карточка.</span></button>
+                <a href="#" class="card-view-btn card-view-btn--card" type="button"><span
+                    class="visually-hidden">карточка.</span></a>
               </li>
               <li class="card-view-item">
-                <button class="card-view-btn card-view-btn--list" type="button"><span
-                    class="visually-hidden">список.</span></button>
+                <a href="#" class="card-view-btn card-view-btn--list" type="button"><span
+                    class="visually-hidden">список.</span></a>
               </li>
             </ul>
           </div>
@@ -220,7 +220,7 @@
         </section>
 
         <!-- subscription -->
-        <section class="subscription subscription--inner">
+        <section class="subscription subscription--inner" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-text subscription-text--inner">Только полезная информация и никакого спама, честное
             бойскаутское!</p>
@@ -232,7 +232,7 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <ul class="socials-list">
           <li class="socials-item">
             <a class="socials-link socials-link--vkontakte" href="https://vk.com/htmlacademy">
