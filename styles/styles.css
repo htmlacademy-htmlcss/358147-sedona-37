@@ -79,6 +79,8 @@ body {
 
 .logo {
   position: absolute;
+  width: 140px;
+  height: 75px;
 }
 
 .main-nav-list {
@@ -195,15 +197,17 @@ body {
 /* hero */
 
 .hero {
-  background-color: #b1c6d4;
   background: url("../images/hero-background-mask.svg") no-repeat center bottom -1px, url("../images/hero-background.jpg") no-repeat center/cover;
   padding-top: 52px;
   padding-bottom: 83px;
+  background-color: #b1c6d4;
 }
 
 .hero-img {
   display: block;
   margin: 0 auto;
+  width: 458px;
+  max-height: 360px;
 }
 
 /* advantages */
@@ -279,6 +283,10 @@ body {
   padding-top: 102px;
   padding-bottom: 102px;
   width: 230px;
+}
+
+.advantages-item--blue img {
+  max-width: 800px;
 }
 
 .advantages-item--blue {
